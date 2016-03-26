@@ -1,12 +1,11 @@
-package LKZ_FTC_robot;
+package org.usfirst.ftc.exampleteam.yourcodehere;
 
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+//import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 import org.swerverobotics.library.interfaces.TeleOp;
-
-//import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp(name="JWM_TeleOpMode")
 /**

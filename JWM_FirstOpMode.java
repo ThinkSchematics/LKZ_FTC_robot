@@ -7,14 +7,16 @@
  *****************************************************************************************************************************************/
 
 
-package LKZ_FTC_robot;
+package org.usfirst.ftc.exampleteam.yourcodehere;
 //Here we are importing a few classes that will help us from having to type more code...
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorController;
+import com.qualcomm.robotcore.hardware.Servo;
 
 import org.swerverobotics.library.SynchronousOpMode;
 import org.swerverobotics.library.interfaces.TeleOp;
+
 
 
 //@TeleOp is used by the driver station to select what program to run.  The 3 modes are TeleOp, Autonomous and Disabled.

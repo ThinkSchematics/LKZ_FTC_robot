@@ -8,11 +8,12 @@
  *****************************************************************************************************************************************/
 
 
-package LKZ_FTC_robot;
+package org.usfirst.ftc.exampleteam.yourcodehere;
 
 //Here we are importing a few classes that will help us from having to type more code...
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorController;
+import com.qualcomm.robotcore.hardware.Servo;
 
 import org.swerverobotics.library.SynchronousOpMode;
 import org.swerverobotics.library.interfaces.Autonomous;
@@ -95,15 +96,16 @@ public class JWM_FirstAutonomousMode_with_encoders extends SynchronousOpMode
         //DriveForward(1);
         //Thread.sleep(4000);
 
-        DriveForwardDistance(0.5, 4480);
+        //DriveForwardDistance(0.5, 4880);
+        DriveForwardDistance(0.2, 3200);
         //to make a right angle aka 90 deg, we will have to do 2240 steps
-        TurnLeftDistance(0.2, 1120);
-        DriveForwardDistance(0.5, 2240);
-        TurnRightDistance(0.2, 2250);
-        DriveForwardDistance(0.5, 2240);
-        TurnRightDistance(0.2, 2240);
-        DriveForwardDistance(0.5, 6720);
-        ReverseDistance(0.5, 1120);
+        TurnLeftDistance(0.1, 505);
+        DriveForwardDistance(0.2, 2850);
+       // TurnRightDistance(0.2, 2250);
+       // DriveForwardDistance(0.5, 2240);
+       // TurnRightDistance(0.2, 2240);
+       // DriveForwardDistance(0.5, 6720);
+       // ReverseDistance(0.5, 1120);
 
         //TurnLeft(1);
         //Thread.sleep(500);
@@ -175,7 +177,7 @@ public class JWM_FirstAutonomousMode_with_encoders extends SynchronousOpMode
             return (motorLeft.getCurrentPosition() < 0) && (motorRight.getCurrentPosition() < 0);
         }
 
-        //we might e able to get rid of power and change it to DRIVE_POWER
+        //we might be able to get rid of power and change it to DRIVE_POWER
         public void DriveForwardDistance(double power, int distance) {
             //Reset both encoders
             motorLeft.setMode(DcMotorController.RunMode.RESET_ENCODERS);
